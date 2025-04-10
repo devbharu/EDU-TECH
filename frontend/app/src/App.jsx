@@ -25,10 +25,10 @@ function App() {
       </div>
 
       {/* Foreground Content */}
-      <div className="relative z-10 h-full flex flex-col">
+      <div className="relative z-10  flex flex-col">
         {/* Navbar */}
         <nav className="w-full bg-black bg-opacity-70 p-4 flex justify-between items-center">
-          <div className="text-2xl font-bold">COLOSSUS</div>
+          <div className="text-2xl font-bold"> EduTech</div>
           <div className="flex gap-6">
             <Link to="/" className="hover:text-yellow-300">Home</Link>
             <Link to="/resources" className="hover:text-yellow-300">Resources</Link>
