@@ -4,7 +4,7 @@ import './App.css';
 import Aichatbot from './components/aichatbot';
 import Home from './components/home';
 import Particles from './components/ogl';
-
+import AuthPage from './components/signup';
 function App() {
   const [count, setCount] = useState(0);
 
@@ -30,9 +30,10 @@ function App() {
         <nav className="w-full bg-black bg-opacity-70 p-4 flex justify-between items-center">
           <div className="text-2xl font-bold"> EduTech</div>
           <div className="flex gap-6">
-            <Link to="/" className="hover:text-yellow-300">Home</Link>
+            <Link to="/home" className="hover:text-yellow-300">Home</Link>
             <Link to="/resources" className="hover:text-yellow-300">Resources</Link>
             <Link to="/dashboard" className="hover:text-yellow-300">Dashboard</Link>
+            <Link to="/signup" className="hover:text-yellow-300">Signup</Link>
           </div>
         </nav>
 
@@ -42,6 +43,7 @@ function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/resources" element={<div>Resources Component</div>} />
             <Route path="/dashboard" element={<div>Dashboard Component</div>} />
+            <Route path="/signup" element={<AuthPage/>} />
             <Route path="/aichatbot" element={<Aichatbot />} />
           </Routes>
         </div>
